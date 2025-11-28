@@ -1,0 +1,205 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arimo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, rgba(248, 250, 252, 1) 0%, rgba(239, 246, 255, 1) 50%, rgba(238, 242, 255, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    background: #FFFFFF;
+    border: 0.889px solid rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    padding: 32px 32px 0 32px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Section */
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+}
+
+.heading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0A0A0A;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.subheading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #717182;
+    text-align: center;
+}
+
+/* Sign In Section */
+.signin-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 0;
+}
+
+.signin-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #717182;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.signin-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    background: #FFFFFF;
+    border: 1.778px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.429;
+    color: #0A0A0A;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Arimo', sans-serif;
+}
+
+.signin-button:hover {
+    background: #F8F9FA;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.signin-button:active {
+    transform: scale(0.98);
+}
+
+.button-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.signin-button span {
+    white-space: nowrap;
+}
+
+/* Info Box */
+.info-box {
+    border-top: 0.889px solid rgba(0, 0, 0, 0.1);
+    padding-top: 16.889px;
+    margin-top: 16px;
+}
+
+.info-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #717182;
+    text-align: center;
+}
+
+/* Footer Section */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    padding: 24px 0;
+    border-top: none;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #717182;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .card {
+        padding: 24px 20px 0 20px;
+    }
+
+    .header-section {
+        margin-bottom: 40px;
+    }
+
+    .logo-container {
+        margin-bottom: 48px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .signin-button {
+        height: 44px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        border-radius: 12px;
+        padding: 20px 16px 0 16px;
+    }
+
+    .signin-button span {
+        font-size: 12px;
+    }
+}
